@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="menu">
+      <option value="0">Pilih Makanan</option>
+      <option value="10000">Nasi Goreng - Rp. 10.000</option>
+      <option value="12000">Mie Goreng - Rp. 12.000</option>
+      <option value="15000">Ayam Goreng - Rp. 15.000</option>
+    </select>
+
+    <input type="number" id="jumlah" value="1" />
+    <input type="text" id="harga" />
+    <input type="text" id="total" />
+
+    <script>
+      const select = document.getElementById("menu");
+      const jumlahInput = document.getElementById("jumlah");
+      const hargaInput = document.getElementById("harga");
+      const totalInput = document.getElementById("total");
+
+      select.addEventListener("change", function () {
+        hargaInput.value = select.value;
+        updateTotal();
+      });
+
+      jumlahInput.addEventListener("change", function () {
+        updateTotal();
+      });
+
+      function updateTotal() {
+        const harga = parseInt(hargaInput.value);
+        const jumlah = parseInt(jumlahInput.value);
+        const total = harga * jumlah;
+        totalInput.value = total;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.img {
+	width: 10px;
+}
+
+.info {
+	text-align: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1024px;
+	margin: 2em auto;
+
+}
+
+.navbar {
+	z-index: 100;
+}
+html {
+	scroll-behavior: smooth;
+}
+

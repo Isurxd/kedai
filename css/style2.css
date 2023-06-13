@@ -1,0 +1,16 @@
+body{
+    min-height: 1000rem;
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    background-color: royalblue;
+}
+.col{
+    padding-top: 2rem;
+}
+.credit {
+    padding: 8px;
+    color: white;
+    background: black;
+    margin: 5px;
+}
